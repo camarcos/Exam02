@@ -8,3 +8,5 @@ void print_bits(unsigned char octet)
                 write(1, &bit, 1);
         }
 }
+
+CHECK
