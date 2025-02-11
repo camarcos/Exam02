@@ -13,3 +13,13 @@ int main(int ac, char **av)
         write(1, "\n", 1);
         return(0);
 }
+
+// Write a function that takes a string, and displays the string in reverse
+// followed by a newline.
+
+// The original string must not be modified.
+
+// You must return the string passed as a parameter.
+
+// Your function must be declared as follows:
+// char *rev_print(char *str);

@@ -25,3 +25,30 @@ int main()
                 write(1, "\n", 1);
         }
 }
+// escribe una palabra en funcion del numero que se introduce en el parametro
+// si es multiplo de 3 fizz, si es de 5 buzz y si es de ambos fizzbuzz(15)
+// se debe hacer previamente el cambio para que lea los nemros por digitos
+// debe leer hasta los 100 primeros numeros incluido el 0
+
+// Write a program that prints the numbers from 1 to 100, each separated by a
+// newline.
+
+// If the number is a multiple of 3, it prints 'fizz' instead.
+
+// If the number is a multiple of 5, it prints 'buzz' instead.
+
+// If the number is both a multiple of 3 and a multiple of 5, it prints 'fizzbuzz' instead.
+
+// Example:
+// $>./fizzbuzz
+// 1
+// 2
+// fizz
+// 4
+// buzz
+// fizz
+// 7
+// 8
+// fizz
+// buzz
+// $>
