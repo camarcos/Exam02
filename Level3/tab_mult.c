@@ -2,7 +2,6 @@
 int	ft_atoi(const char *str)
 {
 	int	result = 0;
-
 	while (*str >= '0' && *str <= '9')
 		result = result * 10 + *str++ - '0';
 	return result;
@@ -11,7 +10,6 @@ int	ft_atoi(const char *str)
 void ft_putnbr(int n)
 {
 	char numero[] = "0123456789";
-	
 	if (n >= 10)
 		ft_putnbr(n / 10);
 	write(1, &numero[n % 10], 1);
@@ -19,19 +17,19 @@ void ft_putnbr(int n)
 
 int main (int argc, char *argv[])
 {
-
 	if (argc == 2)
 	{
-		int nbr = ft_atoi(argv[1]);
-
-		for(int i = 0; i <= 9; i++) cambiar esto
+		int num = ft_atoi(argv[1]);
+		int i = 0;
+		while(i <= 9)
 		{
 			ft_putnbr(i);
-			write(1, " x ",3);
-			ft_putnbr(nbr);
+			write(1, " x ", 3);
+			ft_putnbr(num);
 			write(1, " = ", 3);
-			ft_putnbr(nbr * i);
+			ft_putnbr(num * i);
 			write(1, "\n",1);
+			i++;
 		}
 	}
 	write(1, "\n", 1);
@@ -46,7 +44,6 @@ int main (int argc, char *argv[])
 // If there are no parameters, the program displays \n.
 
 // Examples:
-
 // $>./tab_mult 9
 // 1 x 9 = 9
 // 2 x 9 = 18
