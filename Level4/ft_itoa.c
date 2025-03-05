@@ -4,7 +4,7 @@
 char *ft_itoa(int nbr)
 {
     if(nbr == -2147483648)
-        return("-2147483648\0");
+        return("-2147483648");
     int n = nbr;
     int len = 0;
     char *result;
@@ -15,7 +15,7 @@ char *ft_itoa(int nbr)
         n /= 10;
         len++;
     }
-    if(!(result = (char*)malloc(sizeof(char) * (len + 1))));
+    if(!(result = (char*)malloc(sizeof(char) * (len + 1))))
         return(NULL);
     result[len] = '\0';
     if(nbr == 0)
