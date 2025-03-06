@@ -1,20 +1,19 @@
 #include <stdlib.h>
 int *ft_rrange(int start, int end)
 {
-    int i = 0;
     int len = (end - start) + 1;
     int *result;
-    if(len < 0)
+    int i = 0;
+    if (len < 0)
         len = -len + 1;
-    if(!(result = (int *)malloc(sizeof(int)*len)))
+    result = (int *)malloc(sizeof(int) * len);
+    if (!result)
         return(NULL);
-    while(i < len )
+    while (i < len)
     {
-        result[i++] = start;
-        if (end > start)
-            end--;
-        else
-            end++;
+        result[i] = end;
+        end--;
+        i++;
     }
     return(result);
 }
